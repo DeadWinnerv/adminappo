@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cabin&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	color: #000;
+	font-family: 'Cabin', sans-serif;
+	font-weight: 400;
+	body {
+		background-color: #50E6A7;
+	}
+	.logo {
+		font-family: 'Abel', sans-serif;
+		font-size: 42px;
+		color: #50E6A7;
+	}
+	.profile {
+		background-color:#50E6A7;
+		border: none;
+		border-radius: 100%;
+		transition: 0.5s;
+		span {
+			display: block;
+			padding: 1px;
+			align-items: center;
+			justify-items: center;
+			font-size: 32px;
+			color: #226147;
+			transition: 0.5s;
+		}
+	}
+	.profile:hover, .profile:active {
+		background-color:#226147;
+		transition: 0.5s;
+		span {
+			color:#50E6A7;
+			transition: 0.5s;
+		}
+	}
+}
+
+//header
+
+.header {
+	display: grid;
+	grid-template-columns: auto 100fr;
+	gap: 12px;
+	.header__logo {
+		background-color: #226147;
+		padding: 26px;
+		padding-right: 92px;
+		border-bottom-right-radius: 100px;
+	}
+	&__navbar {
+		background-color: #226147;
+		border-bottom-left-radius: 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		top: 0;
+		padding: 6px;
+		max-height: 12px;
+		li {
+			a {
+				padding: 0px;
+				color: #50E6A7;
+			}
+		}
+		li:hover {
+			text-decoration: underline;
+		}
+	}
+}
